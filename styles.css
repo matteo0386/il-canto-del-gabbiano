@@ -537,11 +537,12 @@ h3 {
 }
 
 .teacher-card {
+  display: grid;
+  grid-template-columns: 112px 1fr;
   overflow: hidden;
 }
 
 .teacher-photo {
-  aspect-ratio: 4 / 5;
   margin: 0;
   background: var(--paper-deep);
 }
@@ -554,17 +555,24 @@ h3 {
 }
 
 .teacher-body {
-  padding: 22px;
+  padding: 18px;
 }
 
 .teacher-body h3 {
   font-family: Georgia, "Times New Roman", serif;
-  font-size: clamp(1.6rem, 4vw, 2.15rem);
+  font-size: clamp(1.35rem, 3vw, 1.75rem);
   font-weight: 500;
 }
 
 .teacher-body .role {
-  margin-bottom: 14px;
+  margin-bottom: 10px;
+  font-size: 0.95rem;
+  line-height: 1.35;
+}
+
+.teacher-body p:not(.role) {
+  font-size: 0.95rem;
+  line-height: 1.5;
 }
 
 .faq-list {
@@ -746,9 +754,23 @@ textarea[aria-invalid="true"] {
 
   .audience-grid,
   .include-grid,
-  .teachers-grid,
   .field-row {
     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .teachers-grid {
+    grid-template-columns: minmax(0, 520px);
+    justify-content: center;
+  }
+}
+
+@media (min-width: 760px) {
+  .teachers-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .teacher-card {
+    grid-template-columns: 128px 1fr;
   }
 }
 
