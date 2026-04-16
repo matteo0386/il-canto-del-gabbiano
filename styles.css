@@ -334,8 +334,7 @@ h3 {
 }
 
 .audience-card,
-.include-card,
-.teacher-card {
+.include-card {
   padding: 22px;
 }
 
@@ -535,6 +534,37 @@ h3 {
 .role {
   color: var(--wine);
   font-weight: 800;
+}
+
+.teacher-card {
+  overflow: hidden;
+}
+
+.teacher-photo {
+  aspect-ratio: 4 / 5;
+  margin: 0;
+  background: var(--paper-deep);
+}
+
+.teacher-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center top;
+}
+
+.teacher-body {
+  padding: 22px;
+}
+
+.teacher-body h3 {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(1.6rem, 4vw, 2.15rem);
+  font-weight: 500;
+}
+
+.teacher-body .role {
+  margin-bottom: 14px;
 }
 
 .faq-list {

@@ -59,6 +59,8 @@ Le immagini usate dalla pagina sono in `assets/`:
 - `teatro-san-leonardo-optimized.jpg`: immagine della sezione teatro.
 - `bio-bb-giardino.jpg`: immagine del giardino/spazio esterno.
 - `bio-bb-camera.jpg`: immagine della camera.
+- `gaetano-franzese.jpg`: ritratto di Gaetano Franzese.
+- `marta-bruzzichelli.jpg`: ritratto di Marta Bruzzichelli.
 - `gabbiano-logo.png`: favicon e piccolo logo.
 
 Per sostituirle, mantieni gli stessi nomi file oppure aggiorna i percorsi in `index.html` e `styles.css`.
